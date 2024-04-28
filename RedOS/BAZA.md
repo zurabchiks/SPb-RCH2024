@@ -1,6 +1,7 @@
 1. Базовая настройка устройств
 
    - Настройте имена устройств согласно топологии
+   
      ![screen1](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/1.png)
    
    - Используйте полное доменное имя, кроме ISP
@@ -35,15 +36,21 @@
      - Пользователь sshuser должен иметь возможность запуска утилиты sudo без дополнительной аутентификации(без ввода даже своего пароля).
 
 Настраиваем интерфейсы через nmtui. Для начала настроим ISP. Первый интерфейс выбираем сетевой мост, два остальных локальная сеть (RTR1_ISP, RTR2_ISP).  Далее настраиваем интерфейсы enp0s8, enp0s9
+
  ![screen2](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/2.png)
+
  ![screen3](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/3.png)
 
 Далее настраиваем интерфейсы до ISP (enp0s3) и до локальной сети (enp0s8) на RTR1 и RTR2. Настроим RTR1:
+
  ![screen4](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/4.png)
+
  ![screen5](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/5.png) 
 
 Далее настраиваем аналогично RTR2 в соответствии с таблицей маршрутизации:
+
  ![screen6](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/6.png)
+
  ![screen7](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/7.png)
 
 Создадим пользователя без домашнего каталога:
