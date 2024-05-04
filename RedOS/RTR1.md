@@ -23,3 +23,39 @@
 Результат должен быть следующий:
 
 ![screen1](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/8.png)
+
+После этого нажимаем OK и активируем интерфейс
+
+На RTR2 делаем аналогичные настройки, результат должен быть таким:
+
+![screen2](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/9.png)
+
+>[!NOTE] 
+>Для корректной работы протокола динамической маршрутизации требуется увеличить параметр TTL на интерфейс туннеля:
+
+```bash
+nmcli connection modify tun1 ip-tunnel.ttl 64 
+```
+
+Проверяем: 
+
+```bash
+ip -c a
+```
+
+![screen3](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/10.png)
+
+![screen4](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/11.png)
+
+Попробуем пропинговать с RTR1 и с RTR2:
+
+![screen5](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/12.png)
+
+![screen6](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/13.png)
+
+Проверим получится ли через ISP пропинговать ip адреса наших gre-туннелей:
+
+![screen7](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/14.png)
+
+![screen8](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/15.png)
+
