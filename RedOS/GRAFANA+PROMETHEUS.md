@@ -156,10 +156,10 @@ systemctl status grafana-server
 Приступим к настройке Grafana, переходим по адресу: http://<IP-адрес>:3000/
 
 Вводим в начале: 
-1. Login: admin 
-2. Password: admin
-3. Затем нам предложит ввести новый пароль, в соответствии с критериями указываем пароль: P@ssw0rd
-4. Далее добавим источник данных для Grafana, выбрав Configuration - Data Sources - Add data source.
+ -  Login: admin 
+ -  Password: admin
+ -  Затем нам предложит ввести новый пароль, в соответствии с критериями указываем пароль: P@ssw0rd
+ -  Далее добавим источник данных для Grafana, выбрав Configuration - Data Sources - Add data source.
 
 ![screen4](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/64.png)
 
