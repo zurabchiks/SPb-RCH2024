@@ -48,7 +48,8 @@ vgcreate vg01 /dev/sdb /dev/sdc
 >[!NOTE]
 >где: 
 > - vg01 - произвольное (необходимое по заданию) имя группы
->
+
+>[!NOTE]
 > Просмотреть информацию о созданных группах можно командой:
 >```bash 
 >vgdisplay
@@ -83,7 +84,8 @@ lvcreate -l 100%FREE -n DATA vg01
 > - -L 1G: том на 1 гб
 > - -L50: том на 50мб
 > - -l 40%VG использовать 40% от дискового пространства группы
->
+
+>[!NOTE]
 > Посмотрим информацию о созданном томе:
 > ```bash
 >lvdisplay
@@ -103,3 +105,38 @@ lvcreate -l 100%FREE -n DATA vg01
 
 >[!NOTE]
 >Чтобы начать использовать созданный том, необходимо его отформатировать, создав файловую систему и примонтировать раздел в каталог
+
+Создадим файловую систему ext4:
+
+```bash
+mkfs.ext4 /dev/vg01/DATA
+```
+
+Далее необходимо создать точку монтирования
+
+```bash
+mkdir /opt/data
+```
+
+После этого необходимо добавить запись в файл /etc/fstab:
+
+```bash
+vim /etc/fstab
+```
+
+![screen6](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/34.png)
+
+Применяем монтирование и проверяем результат:
+
+```bash
+mount -av
+```
+
+![screen7](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/35.png)
+
+```bash
+lsblk
+```
+
+![screen8](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/36.png)
+
