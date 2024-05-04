@@ -57,5 +57,5 @@ ip -c a
 
 ![screen7](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/14.png)
 
-![screen8](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/15.png)
+
 
