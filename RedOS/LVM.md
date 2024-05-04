@@ -18,5 +18,7 @@ pvcreate /dev/sdb /dev/sdc
 
 >[!NOTE]
 >Посмотреть, что диск может использоваться LMV можно командой:
-> ```bash pvdisplay ```
+> ```bash
+>pvdisplay 
+>```
 
