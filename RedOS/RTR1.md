@@ -11,4 +11,5 @@
 Переходим к Конфигурации IPV4
 Задаем IPV4 адрес для туннеля
 Результат должен быть следующий:
+
 ![screen1](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/8.png)
