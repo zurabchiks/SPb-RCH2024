@@ -20,3 +20,13 @@
  - [Настройка системы централизованного мониторинга Grafana совместно с Prometheus](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Module_B/GRAFANA%2BPROMETHEUS.md)
 
 ### Модуль Г.  (Обеспечение отказоустойчивости)
+
+ - [Настройка отказоустойчивости перенаправляющего DNS](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Module_G/Keepalived_DNS.md)
+
+ - [Настройка отказоустойчивости динамической трансляции адресов](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Module_G/Keepalived_NAT.md)
+ 
+ - [Настройка отказоустойчивости сервера времени](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Module_G/Keepalived_NTP.md)
+
+ - [Настройка балансировки и отказоустойчивости DHCP сервера](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Module_G/Keepalived_DHCP.md)
+
+ - [Настройка отказоустойчивой системы централизованного управления авторизацией пользователей](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Module_G/FreeIPA.md)
