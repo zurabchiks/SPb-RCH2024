@@ -47,3 +47,70 @@ cd ~/ansible
 ```
 
 Из под root правим конфигурационный файл "/etc/ansible/ansible.cfg" для указания инвентарного файла в домашней каталоге пользователя user в каталоге ansible
+
+```bash 
+vim /etc/ansible/ansible.cfg
+```
+
+![screen1](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/142.png)
+
+Cоздаем инвентарный файл hosts
+
+```bash
+vim ~/ansible/hosts
+```
+
+![screen2](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/143.png)
+
+Создадим каталог для хранения групповых переменных
+
+```bash
+mkdir -p ~/ansible/group_vars
+```
+
+В данном каталоге создадим файлы для хранения переменных для групп
+
+```bash
+vim ~/ansible/group_vars/all.yml
+```
+
+![screen3](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/144.png)
+
+```bash
+vim ~/ansible/group_vars/Server.yml
+```
+
+![screen4](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/145.png)
+
+```bash
+vim ~/ansible/group_vars/RTR1.yml
+```
+
+![screen5](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/146.png)
+
+```bash
+vim ~/ansible/group_vars/RTR2.yml
+```
+
+![screen6](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/147.png)
+
+Выполним проверку
+
+```bash
+cd ~/ansible
+```
+
+```bash
+ansible -m ping all
+```
+
+![screen7](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/148.png)
+
+Создаём структуру директорий для следующего задания
+
+```bash
+mkdir project_{1..5}
+```
+
+![screen8](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/149.png)
+
