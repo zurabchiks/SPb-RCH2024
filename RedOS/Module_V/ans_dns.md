@@ -56,23 +56,23 @@ vim project_2/playbook_1.yml
       when:
         - ansible_os_family == 'REDOS'
 
-# блок для настройки DNS сервера на RTR2 - Астра
-    - name: Configure DNS on Astra
+# блок для настройки DNS сервера на RTR2
+    - name: Configure DNS 
       block:
-        - name: Install bind9 on Astra
+        - name: Install bind9
           apt:
             name: bind9
             state: present
             update_cache: true
 
-        - name: 'Forward requests to {{ rtr2_external_dns }} on Astra'
+        - name: 'Forward requests to {{ rtr2_external_dns }} '
           template:
             src: named.conf.options.j2
             dest: /etc/bind/named.conf.options
           notify:
-            - Restarted and enabled bind9 on Astra
+            - Restarted and enabled bind9 
       when:
-        - ansible_os_family == 'Astra Linux (Orel)'
+        - ansible_os_family == 'REDOS'
 
 # переконфигурирование файла resolv.conf на RTR1 и RTR2
     - name: Configure resolv.conf file
@@ -84,12 +84,6 @@ vim project_2/playbook_1.yml
     - name: Restarted and enabled bind9 on RedOS
       service: 
         name: named
-        state: restarted
-        enabled: true
-
-    - name: Restarted and enabled bind9 on Astra
-      service: 
-        name: bind9
         state: restarted
         enabled: true
 ```
