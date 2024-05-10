@@ -105,7 +105,7 @@ vim project_5/playbook_1.yml
 ansible-playbook project_5/playbook_1.yml
 ```
 
-![screen1](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/158.png)
+![screen1](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/159.png)
 
 Настраиваем NFS клиента
 
@@ -173,11 +173,11 @@ vim project_5/playbook_2.yml
 ansible-playbook project_5/playbook_2.yml
 ```
 
-![screen2](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/159.png)
+![screen2](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/160.png)
 
 Проверяем с SRV1 и SRV2
 
-![screen3](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/160.png)
+![screen3](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/161.png)
 
 
 
