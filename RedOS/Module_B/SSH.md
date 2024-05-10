@@ -66,12 +66,60 @@ mv ans* /opt/keys
 mkdir .ssh/
 ```
 
+Создаем config файл для ssh подключений
+
 ```bash
 nano .ssh/config
 ```
 
+>[!NOTE]
+>На данном скриншоте указано неправильно в графе **IdentityFile** , прописываем следующее:
+>```bash
+>IdentityFile "/opt/keys/ans"
+>```
+
+![screen1](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/139.png)
 
 
 ```bash
 chmod 600 .ssh/config
 ```
+
+Копируем публичный ключ на устройства:
+
+```bash
+ssh-copy-id -i .ssh/ans.pub sshuser@192.168.100.253
+```
+
+```bash
+ssh-copy-id -i .ssh/ans.pub sshuser@192.168.100.1
+```
+
+```bash
+ssh-copy-id -i .ssh/astra_ssh_key.pub sshuser@192.168.100.2
+```
+
+```bash
+ssh-copy-id -i .ssh/ans.pub sshuser@192.168.100.254
+```
+
+На всех устройствах за исключением клиентов правим конфигурационный файл **"/etc/ssh/sshd_config"**
+
+```bash
+vim /etc/ssh/sshd_config
+```
+
+![screen2](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/140.png)
+
+Перезапускаем сервис
+
+```bash
+systemctl restart sshd
+```
+
+Проверяем с CLI1
+
+![screen3](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/141.png)
+
+
+
