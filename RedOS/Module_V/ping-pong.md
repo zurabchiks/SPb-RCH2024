@@ -86,13 +86,13 @@ vim ~/ansible/group_vars/Server.yml
 vim ~/ansible/group_vars/RTR1.yml
 ```
 
-![screen5](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/146.png)
+![screen5](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/145.png)
 
 ```bash
 vim ~/ansible/group_vars/RTR2.yml
 ```
 
-![screen6](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/147.png)
+![screen6](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/145.png)
 
 Выполним проверку
 
@@ -104,7 +104,7 @@ cd ~/ansible
 ansible -m ping all
 ```
 
-![screen7](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/148.png)
+![screen7](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/146.png)
 
 Создаём структуру директорий для следующего задания
 
@@ -112,5 +112,5 @@ ansible -m ping all
 mkdir project_{1..5}
 ```
 
-![screen8](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/149.png)
+![screen8](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Pic/147.png)
 
