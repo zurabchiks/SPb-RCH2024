@@ -21,6 +21,8 @@
 
  - [Настройка SSH на управляемых серверах](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Module_B/SSH.md)
 
+### Модуль В.  (Автоматизация)
+
 ### Модуль Г.  (Обеспечение отказоустойчивости)
 
  - [Настройка отказоустойчивости перенаправляющего DNS](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Module_G/Keepalived_DNS.md)
