@@ -23,6 +23,18 @@
 
 ### Модуль В.  (Автоматизация)
 
+ - [Настройка узла управления Ansible](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Module_V/ping-pong.md)
+
+ - [Настройка динамической трансляции адресов](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Module_V/ans_nat.md)
+
+ - [Настройка перенаправляющего DNS](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Module_V/ans_dns.md)
+
+ - [Настройка протокола динамической конфигурации хостов](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Module_V/ans_dhcp.md)
+
+ - [Настройка сервера времени и клиента](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Module_V/ans_ntp.md)
+
+ - [Настройка NFS сервера и клиента](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Module_V/ans_nfs.md)
+ 
 ### Модуль Г.  (Обеспечение отказоустойчивости)
 
  - [Настройка отказоустойчивости перенаправляющего DNS](https://github.com/zurabchiks/SPb-RCH2024/blob/main/RedOS/Module_G/Keepalived_DNS.md)
