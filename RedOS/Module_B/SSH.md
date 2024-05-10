@@ -96,7 +96,7 @@ ssh-copy-id -i .ssh/ans.pub sshuser@192.168.100.1
 ```
 
 ```bash
-ssh-copy-id -i .ssh/astra_ssh_key.pub sshuser@192.168.100.2
+ssh-copy-id -i .ssh/ans.pub sshuser@192.168.100.2
 ```
 
 ```bash
